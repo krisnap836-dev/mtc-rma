@@ -20,7 +20,6 @@ const firebaseConfig = {
   storageBucket: "mtc-dashboard-rma.firebasestorage.app",
   messagingSenderId: "209882606718",
   appId: "1:209882606718:web:dded34cab0ee9c2e9afc2f",
-  measurementId: "G-1T6H9KX2TC"
 };
 
 
