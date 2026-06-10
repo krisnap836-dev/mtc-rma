@@ -35,13 +35,3 @@ export async function deleteDocument(colName, id) {
 export function subscribeCollection(colName, callback) {
   return () => {};
 }
-export function subscribeCollection(colName, callback) {
-  return onSnapshot(collection(db, colName), (snapshot) => {
-    const data = snapshot.docs.map(doc => ({
-      id: doc.id,
-      ...doc.data()
-    }));
-
-    callback(data);
-  });
-}
