@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, setDoc, deleteDoc, doc,oneSnapshot } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAN7wD1jNrV_a5owR-1vMJRrVy2OFOvF_E",
-  authDomain: "mtcrma-892a2.firebaseapp.com",
-  projectId: "mtcrma-892a2",
-  storageBucket: "mtcrma-892a2.firebasestorage.app",
-  messagingSenderId: "763912940438",
-  appId: "1:763912940438:web:93cd3b4e1d9eadddbb8bb7",
+  apiKey: "AIzaSyA8lVbQRIecsgjzHidHMA_pupX1E1maW5Y",
+  authDomain: "kris-86792.firebaseapp.com",
+  projectId: "kris-86792",
+  storageBucket: "kris-86792.firebasestorage.app",
+  messagingSenderId: "948609200783",
+  appId: "1:948609200783:web:a8bd292f8b538b32e676fa",
 };
 
 const app = initializeApp(firebaseConfig);
