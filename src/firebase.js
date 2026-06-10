@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, setDoc, deleteDoc, doc } from "firebase/firestore";
+import { getFirestore, collection, getDocs, setDoc, deleteDoc, doc,oneSnapshot } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAN7wD1jNrV_a5owR-1vMJRrVy2OFOvF_E",
@@ -34,4 +34,14 @@ export async function deleteDocument(colName, id) {
 
 export function subscribeCollection(colName, callback) {
   return () => {};
+}
+export function subscribeCollection(colName, callback) {
+  return onSnapshot(collection(db, colName), (snapshot) => {
+    const data = snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+
+    callback(data);
+  });
 }
