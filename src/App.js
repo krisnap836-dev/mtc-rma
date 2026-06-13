@@ -469,7 +469,7 @@ function DowntimePage({ downtimes, setDowntimes, toast, theme }) {
           plant:       String(r.plant || r.Plant || "").trim(),
           machine:     String(r.machine || r.Mesin || "").trim(),
           category:    String(r.category || r.Kategori || "Mekanik").trim(),
-          duration:    Number(r.duration || r.Durasi || r["Durasi (menit)"] || r["Durasi (jam)"] || 0),
+          duration:    Number(r.duration || r.Durasi || r["Durasi (menit)"] || 0),
           description: String(r.description || r.Deskripsi || "").trim(),
           status:      String(r.status || r.Status || "Selesai").trim(),
           technician:  String(r.technician || r.Teknisi || "").trim(),
