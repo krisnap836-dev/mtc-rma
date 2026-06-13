@@ -471,7 +471,7 @@ function DowntimePage({ downtimes, setDowntimes, toast, theme }) {
           category:    String(r.category || r.Kategori || "Mekanik").trim(),
           duration:    Number(r.duration || r.Durasi || r["Durasi (menit)"] || r["Durasi (jam)"] || 0),
           description: String(r.description || r.Deskripsi || "").trim(),
-          status:      String(r.status || r.Status || "Pending").trim(),
+          status:      String(r.status || r.Status || "Selesai").trim(),
           technician:  String(r.technician || r.Teknisi || "").trim(),
         })).filter(r => r.machine);
         if (!imported.length) return alert("Tidak ada data valid. Download Template dulu!");
@@ -586,7 +586,7 @@ function DowntimePage({ downtimes, setDowntimes, toast, theme }) {
             <FInput label="Kategori" type="select" options={CATEGORIES} value={form.category} onChange={v => setForm(f=>({...f,category:v}))} required theme={T}/>
             <FInput label="Durasi (menit)" type="number" value={form.duration} onChange={v => setForm(f=>({...f,duration:v}))} required placeholder="60" theme={T}/>
             <FInput label="Teknisi" value={form.technician} onChange={v => setForm(f=>({...f,technician:v}))} placeholder="Nama teknisi" theme={T}/>
-            <FInput label="Status" type="select" options={["Pending","Proses","Selesai"]} value={form.status} onChange={v => setForm(f=>({...f,status:v}))} theme={T}/>
+            <FInput label="Status" type="select" options={["Selesai","Proses","Pending"]} value={form.status} onChange={v => setForm(f=>({...f,status:v}))} theme={T}/>
             <div className="mms-col-span-2" style={{ gridColumn:"span 2" }}>
               <FInput label="Deskripsi Kerusakan" type="textarea" value={form.description} onChange={v => setForm(f=>({...f,description:v}))} placeholder="Jelaskan kerusakan..." theme={T}/>
             </div>
