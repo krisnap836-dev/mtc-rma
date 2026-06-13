@@ -340,7 +340,7 @@ function Dashboard({ downtimes, theme }) {
             <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} menit`:`${v} kejadian`, n==="menit"?"Total Menit":"Total"]}/>
             <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
             <Bar dataKey="menit" name="Menit" radius={[6,6,0,0]}>{catData.map(e => <Cell key={e.name} fill={"#f59e0b"}/>)}</Bar>
-            <Bar dataKey="count" name="Kejadian" fill={#5cbcea} radius={[6,6,0,0]}/>
+            <Bar dataKey="count" name="Kejadian" fill={"#5cbcea"} radius={[6,6,0,0]}/>
           </BarChart>
         </ResponsiveContainer>
       </div>
