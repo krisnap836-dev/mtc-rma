@@ -337,9 +337,9 @@ function Dashboard({ downtimes, theme }) {
             <CartesianGrid strokeDasharray="3 3" stroke={T.tableBorder}/>
             <XAxis dataKey="name" tick={{ fill: T.textSub, fontSize:12 }}/>
             <YAxis tick={{ fill: T.textSub, fontSize:12 }}/>
-            <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${n} hoho`:`${v} heheh`, n==="menit"?"Total Menit":"Total"]}/>
+            <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} hoho`:`${n} heheh`, n==="menit"?"Total Menit":"Total"]}/>
             <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
-            <Bar dataKey="menit" name="Menit" fill={"#5cbcea"} radius={[6,6,0,0]}>{catData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]}/>)}</Bar>
+            <Bar dataKey="menit" name="Menit" fill={"#f59e0b"} radius={[6,6,0,0]}>{catData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]}/>)}</Bar>
             <Bar dataKey="count" name="Kejadian" fill={"#5cbcea"} radius={[6,6,0,0]}/>
           </BarChart>
         </ResponsiveContainer>
@@ -361,7 +361,7 @@ function Dashboard({ downtimes, theme }) {
               <YAxis yAxisId="right" orientation="right" domain={[0,100]} tick={{ fill: T.textSub, fontSize:12 }} label={{ value:"%", angle:90, position:"insideRight", fill: T.textSub, fontSize:11 }}/>
               <Tooltip {...tt} formatter={(v, n) => n==="kumulatif" ? [`${v}%`, "Kumulatif"] : [`${v} menit`, "Total Menit"]}/>
               <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
-              <Bar yAxisId="left" dataKey="menit" name="Menit">{paretoData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]||"#f59e0b"}/>)}</Bar>
+              <Bar yAxisId="left" dataKey="menit" name="Menit" fill={"#f59e0b"} radius={[6,6,0,0]}>{paretoData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]||"#f59e0b"}/>)}</Bar>
               <Line yAxisId="right" type="monotone" dataKey="kumulatif" name="Kumulatif %" stroke="#ef4444" strokeWidth={2} dot={{ fill:"#ef4444" }}/>
             </BarChart>
           </ResponsiveContainer>
@@ -378,7 +378,7 @@ function Dashboard({ downtimes, theme }) {
             <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} menit`:`${v} kejadian`, n==="menit"?"Total Menit":"Jumlah"]}/>
             <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
             <Bar dataKey="menit" name="Menit" fill="#f59e0b" radius={[6,6,0,0]}/>
-            <Bar dataKey="count" name="Kejadian" fill={T.tableBorder} radius={[6,6,0,0]}/>
+            <Bar dataKey="count" name="Kejadian" fill={"#5cbcea"} radius={[6,6,0,0]}/>
           </BarChart>
         </ResponsiveContainer>
       </div>
