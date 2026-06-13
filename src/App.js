@@ -56,7 +56,7 @@ const PAGE_ICONS = {
 
 // ─── THEME CONFIG ─────────────────────────────────────────────────────────────
 const DARK = {
-  bg:        "radial-gradient(circle at 20% 0%, #1a2138 0%, #0a0e1a 45%, #05070c 100%)",
+ bg:        "radial-gradient(circle at 20% 0%, #1a2138 0%, #0a0e1a 45%, #05070c 100%)",
   sidebar:   "rgba(15,19,30,0.55)",
   card:      "rgba(255,255,255,0.045)",
   cardBorder:"rgba(255,255,255,0.09)",
@@ -66,9 +66,9 @@ const DARK = {
   navHover:  "rgba(255,255,255,0.04)",
   divider:   "rgba(255,255,255,0.07)",
   text:      "#ffffff",
-  textSub:   "#2b2e33",
-  textMuted: "#ffffff",
-  modal:     "rgba(229, 231, 237, 0.7)",
+  textSub:   "#9ca3af",
+  textMuted: "#6b7280",
+  modal:     "rgba(20,23,33,0.7)",
   tableHead: "rgba(255,255,255,0.04)",
   tableRow:  "rgba(255,255,255,0.02)",
   tableBorder:"rgba(255,255,255,0.06)",
