@@ -338,7 +338,6 @@ function Dashboard({ downtimes, theme }) {
             <XAxis dataKey="name" tick={{ fill: T.textSub, fontSize:12 }}/>
             <YAxis tick={{ fill: T.textSub, fontSize:12 }}/>
             <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} menit`, n==="menit"?"Total Menit":"Jumlah"]}/>
-            <Tooltip {...tt} formatter={(v, n) => [n==="kejadian"?`${v} ${v} kejadian`, n==="kejadian"?"Total Kejadian":"Jumlah"]}/>
             <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
             <Bar dataKey="menit" name="Menit" radius={[6,6,0,0]}>{catData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]}/>)}</Bar>
             <Bar dataKey="count" name="Kejadian" fill={T.tableBorder} radius={[6,6,0,0]}/>
