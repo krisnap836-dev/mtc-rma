@@ -1118,7 +1118,7 @@ export default function App() {
           if (localStorage.getItem(MIGRATION_KEY) !== "1") {
             const migrated = [];
             for (const item of dt) {
-              const converted = { ...item, duration: Math.round(Number(item.duration || 0) / 60) };
+              const converted = { ...item, duration: Math.round(Number(item.duration || 0) / 360) };
               await saveDoc("downtimes", converted.id, converted);
               migrated.push(converted);
             }
