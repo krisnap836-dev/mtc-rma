@@ -66,7 +66,7 @@ const DARK = {
   navHover:  "rgba(255,255,255,0.04)",
   divider:   "rgba(255,255,255,0.07)",
   text:      "#ffffff",
-  textSub:   "#9ca3af",
+  textSub:   "#2b2e33",
   textMuted: "#ffffff",
   modal:     "rgba(229, 231, 237, 0.7)",
   tableHead: "rgba(255,255,255,0.04)",
