@@ -339,7 +339,7 @@ function Dashboard({ downtimes, theme }) {
             <YAxis tick={{ fill: T.textSub, fontSize:12 }}/>
             <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} menit`:`${v} kejadian`, n==="menit"?"Total Menit":"Jumlah"]}/>
             <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
-            <Bar dataKey="menit" name="Menit" radius={[6,6,0,0]}>{catData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]}/>)}</Bar>
+            <Bar dataKey="menit" name="woi" radius={[6,6,0,0]}>{catData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]}/>)}</Bar>
             <Bar dataKey="count" name="Kejadian" fill={T.tableBorder} radius={[6,6,0,0]}/>
           </BarChart>
         </ResponsiveContainer>
@@ -469,7 +469,7 @@ function DowntimePage({ downtimes, setDowntimes, toast, theme }) {
           plant:       String(r.plant || r.Plant || "").trim(),
           machine:     String(r.machine || r.Mesin || "").trim(),
           category:    String(r.category || r.Kategori || "Mekanik").trim(),
-          duration:    Number(r.duration || r.Durasi || r["Durasi (menit)"] || r["Durasi (detik)"] || 0),
+          duration:    Number(r.duration || r.Durasi || r["Durasi (menit)"] || 0),
           description: String(r.description || r.Deskripsi || "").trim(),
           status:      String(r.status || r.Status || "Selesai").trim(),
           technician:  String(r.technician || r.Teknisi || "").trim(),
