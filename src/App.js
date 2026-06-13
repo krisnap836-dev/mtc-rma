@@ -959,30 +959,6 @@ function TodoPage({ todos, setTodos, toast, theme }) {
   );
 }
 
-// ─── SETTINGS PAGE ────────────────────────────────────────────────────────────
-function SettingsPage({ toast, theme }) {
-  const T = theme;
-  const [waNumber, setWaNumber] = useState(() => localStorage.getItem("mms_wa_number") || "");
-  const [enabled, setEnabled]   = useState(() => localStorage.getItem("mms_wa_enabled") !== "0");
-
-  function saveSettings() {
-    if (waNumber && enabled) {
-      localStorage.setItem("mms_wa_number", waNumber);
-      localStorage.setItem("mms_wa_enabled", "1");
-    } else {
-      localStorage.setItem("mms_wa_enabled", "0");
-    }
-    toast("Pengaturan disimpan!");
-  }
-
-  function testNotif() {
-    if (!waNumber) return alert("Masukkan nomor WhatsApp dulu!");
-    sendWhatsAppNotif({
-      date: today(), machine: "Mesin Test", category: "Mekanik",
-      duration: 1, description: "Ini adalah pesan percobaan dari MMS Dashboard",
-      technician: "Admin", status: "Pending",
-    });
-  }
 
   const cardStyle = { background: T.card, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, boxShadow: T.shadow, border:`1px solid ${T.cardBorder}`, borderRadius:16, padding:24 };
 
