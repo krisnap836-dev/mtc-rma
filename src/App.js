@@ -1112,22 +1112,7 @@ export default function App() {
           loadCollection("orders"),    loadCollection("activities"),
           loadCollection("todos"),
         ]);
-        if (dt.length)  {
-          // ─── MIGRASI SATU KALI: durasi downtime dari JAM ke MENIT ───
-          const MIGRATION_KEY = "mms_duration_unit_migrated_v1";
-          if (localStorage.getItem(MIGRATION_KEY) !== "1") {
-            const migrated = [];
-            for (const item of dt) {
-              const converted = { ...item, duration: Math.round(Number(item.duration || 0) * 60) };
-              await saveDoc("downtimes", converted.id, converted);
-              migrated.push(converted);
-            }
-            localStorage.setItem(MIGRATION_KEY, "1");
-            setDowntimes(migrated);
-          } else {
-            setDowntimes(dt);
-          }
-        } else { for (const x of SEED_DOWNTIMES)  await saveDoc("downtimes",  x.id, x); setDowntimes(SEED_DOWNTIMES); localStorage.setItem("mms_duration_unit_migrated_v1","1"); }
+        if (dt.length)  { setDowntimes(dt); } else { for (const x of SEED_DOWNTIMES)  await saveDoc("downtimes",  x.id, x); setDowntimes(SEED_DOWNTIMES); }
         if (sp.length)  { setParts(sp); }    else { for (const x of SEED_PARTS)        await saveDoc("spareparts", x.id, x); setParts(SEED_PARTS); }
         if (act.length) { setActivities(act);} else { for (const x of SEED_ACTIVITIES) await saveDoc("activities", x.id, x); setActivities(SEED_ACTIVITIES); }
         setTodos(td);
