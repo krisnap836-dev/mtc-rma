@@ -361,7 +361,7 @@ function Dashboard({ downtimes, theme }) {
               <YAxis yAxisId="right" orientation="right" domain={[0,100]} tick={{ fill: T.textSub, fontSize:12 }} label={{ value:"%", angle:90, position:"insideRight", fill: T.textSub, fontSize:11 }}/>
               <Tooltip {...tt} formatter={(v, n) => n==="kumulatif" ? [`${v}%`, "Kumulatif"] : [`${v} menit`, "Total Menit"]}/>
               <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
-              <Bar yAxisId="left" dataKey="menit" name="Menit">{paretoData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]||"#f59e0b"}/>)}</Bar>
+              <Bar yAxisId="left" dataKey="menit" name="Menit"fill="#f59e0b" radius={[6,6,0,0]} >{paretoData.map(e => <Cell key={e.name} fill={CAT_COLORS[e.name]||"#f59e0b"}/>)}</Bar>
               <Line yAxisId="right" type="monotone" dataKey="kumulatif" name="Kumulatif %" stroke="#ef4444" strokeWidth={2} dot={{ fill:"#ef4444" }}/>
             </BarChart>
           </ResponsiveContainer>
