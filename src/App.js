@@ -375,7 +375,7 @@ function Dashboard({ downtimes, theme }) {
             <CartesianGrid strokeDasharray="3 3" stroke={T.tableBorder}/>
             <XAxis dataKey="name" tick={{ fill: T.textSub, fontSize:11 }} interval={0} angle={-30} textAnchor="end" height={60}/>
             <YAxis tick={{ fill: T.textSub, fontSize:12 }}/>
-            <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} menit`:`${v} kejadian`, n==="menit"?"Total Menit":"Jumlah"]}/>
+            <Tooltip {...tt} formatter={(v, n) => [n==="menit"?`${v} menit`,`${v} kejadian`, n==="menit"?"Total Menit":"Jumlah"]}/>
             <Legend wrapperStyle={{ color: T.textSub, fontSize:12 }}/>
             <Bar dataKey="menit" name="Menit" fill="#f59e0b" radius={[6,6,0,0]}/>
             <Bar dataKey="count" name="Kejadian" fill={"#5cbcea"} radius={[6,6,0,0]}/>
