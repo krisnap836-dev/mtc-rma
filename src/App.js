@@ -337,7 +337,7 @@ function Dashboard({ downtimes, theme }) {
         </div>
         <div style={cardStyle}>
           <h3 style={{ color: T.text, fontWeight:600, fontSize:13, margin:"0 0 16px" }}><PieChartIcon size={15} style={{display:"inline",verticalAlign:"-3px",marginRight:6}}/>Distribusi per Kategori</h3>
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width="100%" height={150}>
             <PieChart>
               <Pie data={pieData} cx="50%" cy="50%" innerRadius={50} outerRadius={80} dataKey="value"
                 label={({ name, percent }) => `${name} ${(percent*100).toFixed(0)}%`} labelLine={false} fontSize={11}>
