@@ -1256,7 +1256,7 @@ function SettingsPage({ toast, theme, users, setUsers }) {
       <div style={cardStyle}>
         <h3 style={{ color: T.text, fontWeight:600, fontSize:15, margin:"0 0 8px" }}><Sparkles size={16} style={{display:"inline",verticalAlign:"-3px",marginRight:6}}/>Tentang</h3>
         <p style={{ color: T.textSub, fontSize:13, margin:0, lineHeight:1.6 }}>
-          Maintenance Management System v1.0 — Dashboard untuk monitoring downtime mesin, inventori spare part, order spare part, daily activity, dan to-do list. Data tersimpan secara real-time via Firebase dan dapat diakses dari berbagai device.
+          Maintenance Management System v1.0 — Dashboard untuk monitoring downtime mesin, inventori spare part, order spare part, daily activity, dan to-do list. ASAK KAWA GE SARO, DAK USAH LAMA IGAK DISINI.
         </p>
       </div>
     </div>
