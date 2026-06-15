@@ -1271,13 +1271,12 @@ function AssetMesinPage({ assets, setAssets, toast, theme, perm }) {
         <Modal title={editingId ? "Edit Asset Mesin" : "Tambah Asset Mesin"} onClose={() => { setShowForm(false); setEditingId(null); }} theme={T}>
           <div className="mms-form-grid">
             <FInput label="Kode Mesin" value={form.code} onChange={v => setForm(f=>({...f,code:v}))} required placeholder="Contoh: MESIN-001" theme={T}/>
-            <FInput label="Serial Number" value={form.serialNumber} onChange={v => setForm(f=>({...f,serialNumber:v}))} placeholder="SN" theme={T}/>
+        
             <div className="mms-col-span-2" style={{ gridColumn:"span 2" }}>
               <FInput label="Nama Mesin" value={form.name} onChange={v => setForm(f=>({...f,name:v}))} required placeholder="Contoh: Mesin Press Hidrolik" theme={T}/>
             </div>
             <FInput label="Plant" type="select" options={PLANTS} value={form.plant} onChange={v => setForm(f=>({...f,plant:v}))} theme={T}/>
-            <FInput label="Lokasi" value={form.location} onChange={v => setForm(f=>({...f,location:v}))} placeholder="Area/Ruangan" theme={T}/>
-            <FInput label="Kategori" type="select" options={CATEGORIES} value={form.category} onChange={v => setForm(f=>({...f,category:v}))} theme={T}/>
+            <FInput label="Kategori" type="select" options={["Hidrolik","Pneumatik"]} value={form.category} onChange={v => setForm(f=>({...f,category:v}))} theme={T}/>
             <FInput label="Manufaktur" value={form.manufacturer} onChange={v => setForm(f=>({...f,manufacturer:v}))} placeholder="Brand/Merk" theme={T}/>
             <FInput label="Status" type="select" options={["Aktif","Maintenance","Rusak","Tidak Aktif"]} value={form.status} onChange={v => setForm(f=>({...f,status:v}))} theme={T}/>
             <FInput label="Kondisi" type="select" options={["Baik","Cukup Baik","Rusak"]} value={form.condition} onChange={v => setForm(f=>({...f,condition:v}))} theme={T}/>
