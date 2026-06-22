@@ -34,14 +34,7 @@ const SEED_DOWNTIMES = [
   { id: "s8", date: "2025-06-08", plant: "PLANT 2 KRW", machine: "Motor Listrik H", category: "Elektrik", duration: 150, description: "Winding terbakar", status: "Pending", technician: "Dian R." },
 ];
 const SEED_PARTS = [
-  { id: "p1", code: "SP-001", name: "Bearing 6205", category: "Mekanik", stock: 15, minStock: 5, unit: "pcs", price: 45000 },
-  { id: "p2", code: "SP-002", name: "Seal Kit Hidrolik", category: "Hidrolik", stock: 8, minStock: 3, unit: "set", price: 120000 },
-  { id: "p3", code: "SP-003", name: "Solenoid Valve 5/2", category: "Pneumatik", stock: 4, minStock: 2, unit: "pcs", price: 350000 },
-  { id: "p4", code: "SP-004", name: "Kontaktor LC1D25", category: "Elektrik", stock: 6, minStock: 2, unit: "pcs", price: 280000 },
-  { id: "p5", code: "SP-005", name: "V-Belt A42", category: "Mekanik", stock: 20, minStock: 10, unit: "pcs", price: 35000 },
-  { id: "p6", code: "SP-006", name: "O-Ring NBR 50mm", category: "Hidrolik", stock: 2, minStock: 5, unit: "pcs", price: 8000 },
-  { id: "p7", code: "SP-007", name: "Filter Udara 1/4", category: "Pneumatik", stock: 3, minStock: 3, unit: "pcs", price: 95000 },
-  { id: "p8", code: "SP-008", name: "MCB 3P 32A", category: "Elektrik", stock: 1, minStock: 2, unit: "pcs", price: 185000 },
+ 
 ];
 const SEED_ACTIVITIES = [
   { id: "a1", date: "2025-06-08", plant: "PLANT 1", shift: "Pagi", type: "Preventive", machine: "Mesin Press A", description: "Pelumasan rutin, cek belt dan bearing", status: "Selesai", duration: 2 },
