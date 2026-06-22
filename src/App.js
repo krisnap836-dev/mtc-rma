@@ -935,7 +935,7 @@ function ActivityPage({ activities, setActivities, toast, theme, perm }) {
                       {a.plant && <span style={{ fontSize:11, padding:"4px 10px", borderRadius:999, background:"rgba(245,158,11,0.15)", color:"#f59e0b", fontWeight:500 }}>{a.plant}</span>}
                       <span style={{ fontSize:11, padding:"4px 10px", borderRadius:999, background:"rgba(59,130,246,0.15)", color:"#60a5fa", fontWeight:500 }}>{a.type}</span>
                       <span style={{ fontSize:11, padding:"4px 10px", borderRadius:999, background:"rgba(107,114,128,0.15)", color: T.textMuted, fontWeight:500 }}>📅 {a.date}</span>
-                      {a.duration && <span style={{ fontSize:11, padding:"4px 10px", borderRadius:999, background:"rgba(139,92,246,0.15)", color:"#a78bfa", fontWeight:500 }}>⏱ {a.duration}h</span>}
+                      {a.duration && <span style={{ fontSize:11, padding:"4px 10px", borderRadius:999, background:"rgba(139,92,246,0.15)", color:"#a78bfa", fontWeight:500 }}>⏱ {a.duration}Mnt</span>}
                     </div>
                   </div>
 
