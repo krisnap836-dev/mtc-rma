@@ -976,7 +976,7 @@ function ActivityPage({ activities, setActivities, toast, theme, perm }) {
             <FInput label="Shift" type="select" options={["Pagi","Siang","Malam"]} value={form.shift} onChange={v => setForm(f=>({...f,shift:v}))} required theme={T}/>
             <FInput label="Jenis Aktivitas" type="select" options={["Preventive","Corrective"]} value={form.type} onChange={v => setForm(f=>({...f,type:v}))} theme={T}/>
             <FInput label="Mesin / Aset" value={form.machine} onChange={v => setForm(f=>({...f,machine:v}))} required placeholder="Nama mesin" theme={T}/>
-            <FInput label="Durasi (jam)" type="number" value={form.duration} onChange={v => setForm(f=>({...f,duration:v}))} placeholder="0" theme={T}/>
+            <FInput label="Durasi (Menit)" type="number" value={form.duration} onChange={v => setForm(f=>({...f,duration:v}))} placeholder="0" theme={T}/>
             <FInput label="Status" type="select" options={["Proses","Selesai","Pending"]} value={form.status} onChange={v => setForm(f=>({...f,status:v}))} theme={T}/>
             <div className="mms-col-span-2" style={{ gridColumn:"span 2" }}>
               <FInput label="Deskripsi Pekerjaan" type="textarea" value={form.description} onChange={v => setForm(f=>({...f,description:v}))} required placeholder="Jelaskan pekerjaan..." theme={T}/>
