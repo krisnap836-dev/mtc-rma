@@ -563,8 +563,8 @@ function DowntimePage({ downtimes, setDowntimes, toast, theme, perm }) {
         <div style={{ overflowX:"auto" }}>
           <table style={{ width:"100%", borderCollapse:"collapse", fontSize:13 }}>
             <thead style={{ background: T.tableHead }}>
-              <tr>{(canEdit ? ["Tanggal","Plant","Mesin","Kategori","Durasi","Deskripsi","Status","Aksi"] : ["Tanggal","Plant","Mesin","Kategori","Durasi","Deskripsi","Status"]).map(h => (
-                <th key={h} style={{ textAlign:"left", padding:"12px 22px", color: T.textSub, fontSize:11, fontWeight:600, whiteSpace:"nowrap" }}>{h}</th>
+              <tr>{(canEdit ? ["Tanggal","Plant","Mesin","Kategori","Durasi","Deskripsi","   ","Status","Aksi"] : ["Tanggal","Plant","Mesin","Kategori","Durasi","Deskripsi","   ","Status"]).map(h => (
+                <th key={h} style={{ textAlign:"left", padding:"12px 18px", color: T.textSub, fontSize:11, fontWeight:600, whiteSpace:"nowrap" }}>{h}</th>
               ))}</tr>
             </thead>
             <tbody>
