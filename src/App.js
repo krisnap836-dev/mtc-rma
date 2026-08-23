@@ -71,7 +71,7 @@ function Navbar({ activeSection, setActiveSection }) {
           gap: '12px',
           cursor: 'pointer'
         }} onClick={() => setActiveSection('home')}>
-{
+
   <img
     src="/revion.png"
     alt="Logo"
@@ -80,7 +80,7 @@ function Navbar({ activeSection, setActiveSection }) {
       height: 'auto'
     }}
 />
-{
+
        <span style={{
           fontSize: '24px',
           fontWeight: 'bold',
