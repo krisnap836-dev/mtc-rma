@@ -66,16 +66,33 @@ function Navbar({ activeSection, setActiveSection }) {
         alignItems: 'center'
       }}>
         <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          cursor: 'pointer'
+        }} onClick={() => setActiveSection('home')}>
+{
+  <img
+    src="/revion.png"
+    alt="Logo"
+    style={{
+      widht: '40px',
+      height: 'auto'
+    }}
+/>
+{
+       <span style={{
           fontSize: '24px',
           fontWeight: 'bold',
           background: `linear-gradient(135deg, ${THEME.primary}, ${THEME.secondary})`,
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
-          cursor: 'pointer'
-        }} onClick={() => setActiveSection('home')}>
+          paddingTop: '4px'
+}}>
           REVION 3D Manufacturing
-        </div>
+            </span>
+            </div>
         
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           {['home', 'services', 'portfolio', 'about', 'contact'].map(item => (
