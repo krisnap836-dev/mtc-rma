@@ -81,6 +81,13 @@ function Navbar({ activeSection, setActiveSection }) {
       objectFit: 'contain'
     }}
 />
+   <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+          lineHeight: '1.2'
+}}>
 
        <span style={{
           fontSize: '24px',
@@ -88,11 +95,19 @@ function Navbar({ activeSection, setActiveSection }) {
           background: `linear-gradient(135deg, ${THEME.primary}, ${THEME.secondary})`,
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          paddingTop: '4px'
+          backgroundClip: 'text'  
 }}>
-          REVION 3D Manufacturing
+          REVION 3D 
             </span>
+        <span style={{
+          fontSize: '18px',
+          fontWeight: '500',
+          background: `linear-gradient(135deg, ${THEME.primary}, ${THEME.secondary})`,
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text' 
+          }}>
+            Manufacturing
             </div>
         
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
