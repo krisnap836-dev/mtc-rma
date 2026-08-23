@@ -76,8 +76,8 @@ function Navbar({ activeSection, setActiveSection }) {
     src="/revion.png"
     alt="Logo"
     style={{
-      widht: '40px',
-      height: '40px',
+      widht: '44px',
+      height: '44px',
       objectFit: 'contain'
     }}
 />
@@ -108,8 +108,9 @@ function Navbar({ activeSection, setActiveSection }) {
           backgroundClip: 'text' 
           }}>
             Manufacturing
+              </span>
             </div>
-        
+          </div>
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           {['home', 'services', 'portfolio', 'about', 'contact'].map(item => (
             <button
