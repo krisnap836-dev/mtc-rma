@@ -77,7 +77,8 @@ function Navbar({ activeSection, setActiveSection }) {
     alt="Logo"
     style={{
       widht: '40px',
-      height: 'auto'
+      height: '40px',
+      objectFit: 'contain'
     }}
 />
 
