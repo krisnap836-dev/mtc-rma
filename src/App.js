@@ -1078,7 +1078,7 @@ function Footer() {
             © 2024 3D PrintStudio. Semua hak dilindungi.
           </p>
           <p style={{ fontSize: '12px', color: THEME.textSub }}>
-            Dibuat dengan ❤️ oleh 3D PrintStudio Team
+            Dibuat dengan oleh Revion 3D Manufacturing
           </p>
         </div>
       </div>
