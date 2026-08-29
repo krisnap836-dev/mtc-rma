@@ -543,7 +543,7 @@ function AboutSection() {
               color: THEME.text,
               marginBottom: '24px'
             }}>
-              Tentang <span style={{ color: THEME.primary }}>3D PrintStudio</span>
+              Tentang <span style={{ color: THEME.primary }}>Revion 3D Manufacturing</span>
             </h2>
             <p style={{
               fontSize: '16px',
@@ -551,7 +551,7 @@ function AboutSection() {
               lineHeight: 1.8,
               marginBottom: '16px'
             }}>
-              3D PrintStudio adalah perusahaan spesialis dalam pembuatan miniatur custom, souvenir 3D printing, dan gift eksklusif. Dengan teknologi terkini dan tim profesional, kami siap mewujudkan ide kreatif Anda menjadi produk nyata yang memukau.
+              Revion 3D Manufacturing adalah Penyedia jasa spesialis dalam pembuatan miniatur custom, souvenir 3D printing, dan gift eksklusif. Dengan teknologi terkini dan tim profesional, kami siap mewujudkan ide kreatif Anda menjadi produk nyata yang memukau.
             </p>
             <p style={{
               fontSize: '16px',
@@ -559,7 +559,7 @@ function AboutSection() {
               lineHeight: 1.8,
               marginBottom: '24px'
             }}>
-              Sejak didirikan pada tahun 2021, kami telah melayani lebih dari 500 project dengan tingkat kepuasan klien mencapai 98%. Setiap project dikerjakan dengan detail dan dedikasi penuh untuk menghasilkan produk berkualitas terbaik.
+              Sejak didirikan pada tahun 2026, kami telah melayani lebih dari 500 project dengan tingkat kepuasan klien mencapai 98%. Setiap project dikerjakan dengan detail dan dedikasi penuh untuk menghasilkan produk berkualitas terbaik.
             </p>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
