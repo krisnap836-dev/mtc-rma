@@ -1075,7 +1075,7 @@ function Footer() {
           paddingTop: '24px'
         }}>
           <p style={{ marginBottom: '12px' }}>
-            © 2024 3D PrintStudio. Semua hak dilindungi.
+            © 2026 Revion 3D Manufacturing . Semua hak dilindungi.
           </p>
           <p style={{ fontSize: '12px', color: THEME.textSub }}>
             Dibuat dengan oleh Revion 3D Manufacturing
